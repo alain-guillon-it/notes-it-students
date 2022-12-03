@@ -16,7 +16,7 @@ function LearningHtml() {
             <NavLink to="ide">ide</NavLink>
           </li>
           <li>
-            <NavLink to="tag">tag / balise</NavLink>
+            <NavLink to="tag">tag</NavLink>
           </li>
           <li>
             <NavLink to="html">html</NavLink>
@@ -28,7 +28,13 @@ function LearningHtml() {
             <NavLink to="meta">meta</NavLink>
           </li>
           <li>
+            <NavLink to="title">title</NavLink>
+          </li>
+          <li>
             <NavLink to="link">link</NavLink>
+          </li>
+          <li>
+            <NavLink to="script">Script</NavLink>
           </li>
           <li>
             <NavLink to="body">body</NavLink>
@@ -40,25 +46,52 @@ function LearningHtml() {
 
         <h3>Visible</h3>
         <ul>
-          <li>SEMANTIQUE</li>
-          <li>TITRE</li>
-          <li>PARAGRAPHE</li>
-          <li>LISTES</li>
-          <li>LIEN</li>
-          <li>IMAGES</li>
-          <li>TABLEAUX</li>
-          <li>AUDIO</li>
-          <li>VIDEO</li>
-          <li>IFRAME</li>
+          <li>
+            <NavLink to="semantique">semantique</NavLink>
+          </li>
+          <li>
+            <NavLink to="paragraphe">paragraphe</NavLink>
+          </li>
+          <li>
+            <NavLink to="listes">listes</NavLink>
+          </li>
+          <li>
+            <NavLink to="lien">lien</NavLink>
+          </li>
+          <li>
+            <NavLink to="images">images</NavLink>
+          </li>
+          <li>
+            <NavLink to="tableau">tableau</NavLink>
+          </li>
+          <li>
+            <NavLink to="audio">audio</NavLink>
+          </li>
+          <li>
+            <NavLink to="video">video</NavLink>
+          </li>
+          <li>
+            <NavLink to="iframe">iframe</NavLink>
+          </li>
         </ul>
 
         <h3>Formulaire</h3>
         <ul>
-          <li>FORM</li>
-          <li>LABEL</li>
-          <li>INPUT</li>
-          <li>BUTTON</li>
-          <li>TEXTAREA</li>
+          <li>
+            <NavLink to="form">form</NavLink>
+          </li>
+          <li>
+            <NavLink to="label">label</NavLink>
+          </li>
+          <li>
+            <NavLink to="input">input</NavLink>
+          </li>
+          <li>
+            <NavLink to="button">button</NavLink>
+          </li>
+          <li>
+            <NavLink to="textarea">textarea</NavLink>
+          </li>
         </ul>
       </section>
       <Outlet />

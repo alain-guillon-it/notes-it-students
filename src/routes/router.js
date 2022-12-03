@@ -18,6 +18,10 @@ import ArticleHEAD from "../pages/learningHTML/articles/ArticleHEAD";
 import ArticleLINK from "../pages/learningHTML/articles/ArticleLINK";
 import ArticleBODY from "../pages/learningHTML/articles/ArticleBODY";
 import ArticleSTRUCTURE from "../pages/learningHTML/articles/ArticleSTRUCTURE";
+import HomeHTML from "../pages/learningHTML/HomeHTML";
+import ArticleSEMANTIQUE from "../pages/learningHTML/articles/ArticleSEMANTIQUE";
+import ArticleTITLE from "../pages/learningHTML/articles/ArticleTITLE";
+import ArticleSCRIPT from "../pages/learningHTML/articles/ArticleSCRIPT";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +40,10 @@ export const router = createBrowserRouter([
         path: "/learning/html",
         element: <LearningHtml />,
         children: [
+          {
+            index: true,
+            element: <HomeHTML />,
+          },
           {
             path: "ide",
             element: <ArticleIDE />,
@@ -57,8 +65,16 @@ export const router = createBrowserRouter([
             element: <ArticleMETA />,
           },
           {
+            path: "title",
+            element: <ArticleTITLE />,
+          },
+          {
             path: "link",
             element: <ArticleLINK />,
+          },
+          {
+            path: "script",
+            element: <ArticleSCRIPT />,
           },
           {
             path: "body",
@@ -67,6 +83,10 @@ export const router = createBrowserRouter([
           {
             path: "structure",
             element: <ArticleSTRUCTURE />,
+          },
+          {
+            path: "semantique",
+            element: <ArticleSEMANTIQUE />,
           },
         ],
       },

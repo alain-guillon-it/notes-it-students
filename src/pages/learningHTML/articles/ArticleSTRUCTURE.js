@@ -4,7 +4,7 @@ import Styles from "../LearningHtml.module.scss";
 function ArticleSTRUCTURE() {
   return (
     <article className={Styles.LearningHtml__article}>
-      <h3>Structure</h3>
+      <h1>Structure</h1>
       <ul>
         <li>Exemple</li>
       </ul>

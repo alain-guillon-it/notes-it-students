@@ -1,16 +1,15 @@
 // styles scss
 import Styles from "../LearningHtml.module.scss";
 
-function ArticleHTML() {
+function ArticleSEMANTIQUE() {
   return (
     <article className={Styles.LearningHtml__article}>
-      <h1>HTML</h1>
+      <h1>SEMANTIQUE</h1>
       <ul>
-        <li>HTML ?</li>
-        <li>A quoi sa sert ?</li>
+        <li>Utilité ?</li>
       </ul>
     </article>
   );
 }
 
-export default ArticleHTML;
+export default ArticleSEMANTIQUE;

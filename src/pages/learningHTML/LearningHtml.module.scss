@@ -6,29 +6,23 @@
   grid-template-areas:
     "menu content"
     "menu content";
-
-  aside {
-    grid-area: aside;
-    background-color: var(--bg-primary);
-    padding: 15px;
-  }
 }
 
 .LearningHtml__menu {
   grid-area: menu;
   background-color: var(--bg-secondary);
-  padding: 15px;
+  padding: 10px;
   border-right: 3px solid var(--black-intense);
   color: var(--white);
 
   h2 {
     text-align: center;
-    margin: 17px 0 35px;
+    margin: 22px 0 35px;
     padding-bottom: 25px;
     border-bottom: 1px solid var(--white);
   }
   h3 {
-    margin: 25px 5px;
+    margin: 15px 5px;
   }
   ul {
     li {
@@ -49,12 +43,30 @@
 .LearningHtml__article {
   grid: content;
   padding: 15px;
-  box-shadow: var(--shadow-inset-xl);
 
   h1 {
     text-align: center;
     margin: 15px 0 35px;
     padding-bottom: 25px;
     border-bottom: 1px solid var(--bg-secondary);
+  }
+}
+
+.LearningHtml__article__ide {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  column-gap: 25px;
+  row-gap: 25px;
+
+  figure {
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  figcaption {
+    color: var(--text-primary);
   }
 }

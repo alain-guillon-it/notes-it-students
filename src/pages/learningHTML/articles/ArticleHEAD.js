@@ -4,7 +4,7 @@ import Styles from "../LearningHtml.module.scss";
 function ArticleHEAD() {
   return (
     <article className={Styles.LearningHtml__article}>
-      <h3>HEAD</h3>
+      <h1>HEAD</h1>
       <ul>
         <li>Son utilité ?</li>
         <li>Où l'écrire ?</li>

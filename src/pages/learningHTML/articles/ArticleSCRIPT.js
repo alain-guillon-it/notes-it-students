@@ -1,17 +1,17 @@
 // styles scss
 import Styles from "../LearningHtml.module.scss";
 
-function ArticleMeta() {
+function ArticleSCRIPT() {
   return (
     <article className={Styles.LearningHtml__article}>
-      <h1>Méta</h1>
+      <h1>Scritp</h1>
       <ul>
-        <li>Les méta ça sert à quoi ?</li>
+        <li>Son utilité</li>
         <li>Comment ça marche ?</li>
-        <li>Les plus importante</li>
+        <li>Exemple</li>
       </ul>
     </article>
   );
 }
 
-export default ArticleMeta;
+export default ArticleSCRIPT;
