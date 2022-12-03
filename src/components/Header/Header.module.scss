@@ -1,0 +1,57 @@
+.Header {
+  grid-area: header;
+  height: 54px;
+  background-color: var(--bg-primary);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 2px solid var(--black-intense);
+
+  section {
+    display: flex;
+    align-items: center;
+    img {
+      height: 52px;
+      width: 52px;
+      margin: 0 10px 0 1px;
+    }
+    span {
+      font-style: italic;
+      font-size: calc(10px + 1vmin);
+      text-shadow: 1px 1px 1.5px var(--secondary);
+    }
+  }
+  nav {
+    background-color: var(--black-intense);
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      li {
+        padding: 0 20px;
+        width: 100%;
+        transition: background-color 0.2s;
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          height: 54px;
+          width: 90px;
+          color: var(--primary);
+          text-decoration: none;
+          transition: color 0.2s;
+        }
+
+        &:hover {
+          background-color: var(--primary);
+          a {
+            color: var(--secondary);
+          }
+        }
+      }
+    }
+  }
+}

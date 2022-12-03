@@ -1,0 +1,39 @@
+.CardLanguage {
+  max-width: 250px;
+  height: 200px;
+  border: 1px solid var(--secondary);
+  border-radius: 4px 4px 0 0;
+  box-shadow: var(--shadow-all);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 50px;
+  grid-template-areas: "img" "go";
+  filter:sepia(100%);
+  transition: filter 0.4s;
+
+  &:hover {
+    filter: sepia(0);
+  }
+
+  img {
+    grid-area: img;
+    border-bottom: 1px solid var(--secondary);
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+  }
+  a {
+    grid-area: go;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 100%;
+    color: var(--text-primary);
+    background-color: var(--white);
+
+    i {
+      margin-left: 15px;
+    }
+  }
+}

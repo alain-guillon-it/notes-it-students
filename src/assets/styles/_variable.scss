@@ -1,0 +1,40 @@
+/**
+ * By Alain GUILLON
+ * Version 1.0
+ * -------------------------------------------------------------
+ * License: MIT
+ * -------------------------------------------------------------
+ **/
+
+:root {
+  // colors
+  --primary: #eb5427;
+  --secondary: #333333;
+  --white: #f1f1f1;
+  --black-intense: #000000;
+
+  // background-color
+  --bg-primary: var(--primary);
+  --bg-secondary: var(--secondary);
+
+  // text
+  --text-primary: var(--primary);
+  --text-secondary: var(--seconday);
+
+  // box-shadow
+  --shadow-top-1: -1px 0 5px 1px var(--black-intense);
+  --shadow-bottom-1: 1px 0 5px 1px var(--black-intense);
+  --shadow-inset-xl: inset 0 0 150px var(--black-intense);
+  --shadow-inset-sm: inset 0 0 50px var(--black-intense);
+  --shadow-all: 0 0 5px var(--black-intense);
+
+  // font-family
+  --font-code: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  --font-title: Monaco;
+  --font-text: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+// $font-code: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;

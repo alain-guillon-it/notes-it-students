@@ -1,0 +1,58 @@
+/**
+ * By Alain GUILLON
+ * Version 1.0
+ * -------------------------------------------------------------
+ * License: MIT
+ * -------------------------------------------------------------
+ **/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: calc(10px + 2vmin);
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+}
+
+strong {
+  color: var(--primary);
+}
+
+code {
+  font-family: var(--font-code); // $font-code;
+}
+
+img {
+  // width: 100%;
+  pointer-events: none;
+}
+
+ul {
+  list-style: none;
+}
+
+::selection {
+  background-color: var(--bg-primary);
+  color: var(--secondary);
+}

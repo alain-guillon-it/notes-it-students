@@ -1,13 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// dependencies
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes/router";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// styles scss
+import "./assets/styles/index.scss";
+
+// measuring performance
+import reportWebVitals from "./reportWebVitals";
+
+// app
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

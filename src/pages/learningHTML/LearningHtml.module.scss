@@ -1,0 +1,60 @@
+.LearningHtml {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "menu content"
+    "menu content";
+
+  aside {
+    grid-area: aside;
+    background-color: var(--bg-primary);
+    padding: 15px;
+  }
+}
+
+.LearningHtml__menu {
+  grid-area: menu;
+  background-color: var(--bg-secondary);
+  padding: 15px;
+  border-right: 3px solid var(--black-intense);
+  color: var(--white);
+
+  h2 {
+    text-align: center;
+    margin: 17px 0 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--white);
+  }
+  h3 {
+    margin: 25px 5px;
+  }
+  ul {
+    li {
+      padding-left: 25px;
+      a {
+        color: var(--white);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: color 0.2s;
+        &:hover {
+          color: var(--text-primary);
+        }
+      }
+    }
+  }
+}
+
+.LearningHtml__article {
+  grid: content;
+  padding: 15px;
+  box-shadow: var(--shadow-inset-xl);
+
+  h1 {
+    text-align: center;
+    margin: 15px 0 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--bg-secondary);
+  }
+}
