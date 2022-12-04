@@ -8,20 +8,23 @@ import CoursesList from "../pages/coursesList/CoursesList";
 import HomePage from "../pages/homepage/HomePage";
 import LearningCss from "../pages/learningCSS/learningCss";
 import ArticleIDE from "../pages/learningHTML/articles/ArticleIDE";
-import ArticleMETA from "../pages/learningHTML/articles/ArticleMETA";
-import ArticleHTML from "../pages/learningHTML/articles/ArticleHTML";
-import ArticleTAG from "../pages/learningHTML/articles/ArticleTAG";
+import ArticleTAG from "../pages/learningHTML/articles/articleTAG/ArticleTAG";
 import LearningHtml from "../pages/learningHTML/learningHtml";
 import LearningJs from "../pages/learningJS/learningJS";
 import LearningPhp from "../pages/learningPHP/learningPhp";
-import ArticleHEAD from "../pages/learningHTML/articles/ArticleHEAD";
-import ArticleLINK from "../pages/learningHTML/articles/ArticleLINK";
-import ArticleBODY from "../pages/learningHTML/articles/ArticleBODY";
 import ArticleSTRUCTURE from "../pages/learningHTML/articles/ArticleSTRUCTURE";
 import HomeHTML from "../pages/learningHTML/HomeHTML";
-import ArticleSEMANTIQUE from "../pages/learningHTML/articles/ArticleSEMANTIQUE";
 import ArticleTITLE from "../pages/learningHTML/articles/ArticleTITLE";
-import ArticleSCRIPT from "../pages/learningHTML/articles/ArticleSCRIPT";
+import WhatTag from "../pages/learningHTML/articles/articleTAG/WhatTag";
+import HowWriteTag from "../pages/learningHTML/articles/articleTAG/HowWriteTag";
+import ArticlePARAGRAPH from "../pages/learningHTML/articles/ArticlePARAGRAPH";
+import ArticleLIST from "../pages/learningHTML/articles/ArticleLIST";
+import ArticleLINK from "../pages/learningHTML/articles/ArticleLINK";
+import ArticleIMG from "../pages/learningHTML/articles/ArticleIMG";
+import ArticleARRAY from "../pages/learningHTML/articles/ArticleARRAY";
+import ArticleFORM from "../pages/learningHTML/articles/ArticleFORM";
+import ArticleLABEL from "../pages/learningHTML/articles/ArticleLABEL";
+import ArticleINPUT from "../pages/learningHTML/articles/ArticleINPUT";
 
 export const router = createBrowserRouter([
   {
@@ -51,42 +54,56 @@ export const router = createBrowserRouter([
           {
             path: "tag",
             element: <ArticleTAG />,
-          },
-          {
-            path: "html",
-            element: <ArticleHTML />,
-          },
-          {
-            path: "head",
-            element: <ArticleHEAD />,
-          },
-          {
-            path: "meta",
-            element: <ArticleMETA />,
-          },
-          {
-            path: "title",
-            element: <ArticleTITLE />,
-          },
-          {
-            path: "link",
-            element: <ArticleLINK />,
-          },
-          {
-            path: "script",
-            element: <ArticleSCRIPT />,
-          },
-          {
-            path: "body",
-            element: <ArticleBODY />,
+            children: [
+              {
+                path: "what-is-a-tag-or-balise",
+                element: <WhatTag />,
+              },
+              {
+                path: "how-writing-a-tag",
+                element: <HowWriteTag />,
+              },
+            ],
           },
           {
             path: "structure",
             element: <ArticleSTRUCTURE />,
           },
           {
-            path: "semantique",
-            element: <ArticleSEMANTIQUE />,
+            path: "title",
+            element: <ArticleTITLE />,
+          },
+          {
+            path: "paragraph",
+            element: <ArticlePARAGRAPH />,
+          },
+          {
+            path: "list",
+            element: <ArticleLIST />,
+          },
+          {
+            path: "link",
+            element: <ArticleLINK />,
+          },
+          {
+            path: "img",
+            element: <ArticleIMG />,
+          },
+          {
+            path: "table",
+            element: <ArticleARRAY />,
+          },
+          {
+            path: "form",
+            element: <ArticleFORM />,
+          },
+          {
+            path: "label",
+            element: <ArticleLABEL />,
+          },
+          {
+            path: "input",
+            element: <ArticleINPUT />,
           },
         ],
       },

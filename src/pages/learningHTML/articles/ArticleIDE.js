@@ -7,14 +7,19 @@ function ArticleIDE() {
     <article className={Styles.LearningHtml__article}>
       <h1>IDE</h1>
       <section>
-        <p>
+        <p
+          style={{
+            letterSpacing: "1.8px",
+            margin: "0 auto",
+            width: "75%",
+          }}
+        >
           Un IDE est en environement de développement, il permet d'écrire du
-          code <br />
-          très simplement tout en bénéficiant d'une multitudes d'utilitaires
-          (plugins) afin d'améliorer son potentiel.
-          <br /> Voici une liste des éditeurs de code les plus connue.
-          <br /> Libre à vous de choisir celui avec lequel vous vous sentirez le
-          plus à l'aide.
+          code très simplement tout en bénéficiant d'une multitudes
+          d'utilitaires (plugins) afin d'améliorer son potentiel. Voici une
+          liste des éditeurs de code les plus connue.
+          <br /> <br /> Libre à vous de choisir celui avec lequel vous vous
+          sentirez le plus à l'aise.
         </p>
       </section>
       <section className={Styles.LearningHtml__article__ide}>

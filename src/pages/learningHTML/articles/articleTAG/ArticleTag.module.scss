@@ -1,0 +1,41 @@
+.ArticleTAG {
+  width: 90%;
+  margin: 50px auto;
+
+  nav {
+    background-color: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    a {
+      text-decoration: none;
+      padding: 8px 16px;
+      color: var(--white);
+      transition: color 0.2s;
+
+      &:hover {
+        color: var(--text-primary);
+      }
+    }
+  }
+
+  div {
+    height: fit-content;
+    padding: 50px;
+    border-right: 1px solid var(--secondary);
+    border-bottom: 1px solid var(--secondary);
+    border-left: 1px solid var(--secondary);
+
+    h2 {
+      margin-bottom: 25px;
+    }
+    p {
+      line-height: 1.4;
+    }
+
+    h3 + img {
+      width: 500px;
+      margin: 15px 25px;
+    }
+  }
+}

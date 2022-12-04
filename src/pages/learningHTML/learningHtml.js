@@ -19,27 +19,6 @@ function LearningHtml() {
             <NavLink to="tag">tag</NavLink>
           </li>
           <li>
-            <NavLink to="html">html</NavLink>
-          </li>
-          <li>
-            <NavLink to="head">head</NavLink>
-          </li>
-          <li>
-            <NavLink to="meta">meta</NavLink>
-          </li>
-          <li>
-            <NavLink to="title">title</NavLink>
-          </li>
-          <li>
-            <NavLink to="link">link</NavLink>
-          </li>
-          <li>
-            <NavLink to="script">Script</NavLink>
-          </li>
-          <li>
-            <NavLink to="body">body</NavLink>
-          </li>
-          <li>
             <NavLink to="structure">structure</NavLink>
           </li>
         </ul>
@@ -47,31 +26,34 @@ function LearningHtml() {
         <h3>Visible</h3>
         <ul>
           <li>
-            <NavLink to="semantique">semantique</NavLink>
+            <NavLink to="title">title</NavLink>
           </li>
           <li>
-            <NavLink to="paragraphe">paragraphe</NavLink>
+            <NavLink to="paragraph">paragraph</NavLink>
           </li>
           <li>
-            <NavLink to="listes">listes</NavLink>
+            <NavLink to="list">list</NavLink>
           </li>
           <li>
-            <NavLink to="lien">lien</NavLink>
+            <NavLink to="link">link</NavLink>
           </li>
           <li>
-            <NavLink to="images">images</NavLink>
+            <NavLink to="img">image</NavLink>
           </li>
           <li>
-            <NavLink to="tableau">tableau</NavLink>
+            <NavLink to="table">array</NavLink>
           </li>
           <li>
-            <NavLink to="audio">audio</NavLink>
+            {/* <NavLink to="audio">audio</NavLink> */}
+            AUDIO ------------ <small>à faire</small>
           </li>
           <li>
-            <NavLink to="video">video</NavLink>
+            {/* <NavLink to="video">video</NavLink> */}
+            VIDEO ------------ <small>à faire</small>
           </li>
           <li>
-            <NavLink to="iframe">iframe</NavLink>
+            {/* <NavLink to="iframe">iframe</NavLink> */}
+            IFRAME ---------- <small>à faire</small>
           </li>
         </ul>
 
@@ -87,10 +69,12 @@ function LearningHtml() {
             <NavLink to="input">input</NavLink>
           </li>
           <li>
-            <NavLink to="button">button</NavLink>
+            {/* <NavLink to="button">button</NavLink> */}
+            BUTTON ---------- <small>à faire</small>
           </li>
           <li>
-            <NavLink to="textarea">textarea</NavLink>
+            {/* <NavLink to="textarea">textarea</NavLink> */}
+            TEXTAREA ---------- <small>à faire</small>
           </li>
         </ul>
       </section>
